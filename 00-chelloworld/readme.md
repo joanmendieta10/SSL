@@ -1,1 +1,1 @@
-# Resolución: Hello World en C23
+# Resolución: Hello World en C23 lenguaje C
