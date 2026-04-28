@@ -7,9 +7,9 @@
 | **¿Es parte del lenguaje?** | No como tipo nativo. Es un arreglo de `char` terminado en `\0`. | Si, es un objeto de la clase funcional `String`. |
 | **¿Es parte de la biblioteca?** | Si, las funciones de manipulación están en `<string.h>`. | Si, reside en el paquete nucleo `java.lang`. |
 | **Alfabeto** | Generalmente **ASCII** (8 bits por char). | **Unicode** (originalmente UTF-16, 16 bits por char). |
-| **Alocación de memoria** | **Manual/Estática**. El programador decide si va al *stack* o al *heap* (`malloc`). | **Automática**. Se gestiona en el *Heap* mediante el Garbage Collector. |
-| **Mutabilidad** | **Mutable**. Se puede modificar cualquier índice del arreglo directamente. | **Inmutable**. Cualquier "modificación" crea un nuevo objeto en memoria. |
-| **First Class Citizen** | **No**. No se pueden asignar directamente o comparar con `==`. | **Casi**. Tiene trato especial (literales, operador `+`), pero es un objeto. |
+| **Alocación de memoria** | **Manual/Estática**. El programador decide si va al stack o al heap (`malloc`). | Automática. Se gestiona en el *Heap* mediante el Garbage Collector. |
+| **Mutabilidad** | **Mutable**. Se puede modificar cualquier índice del arreglo directamente. | Inmutable. Cualquier "modificación" crea un nuevo objeto en memoria. |
+| **First Class Citizen** | **No**. No se pueden asignar directamente o comparar con `==`. | Casi. Tiene trato especial (literales, operador `+`), pero es un objeto. |
 | **Pasaje de argumentos** | **Por referencia (puntero)**. Se pasa la dirección del primer elemento. | **Por valor (de la referencia)**. Se pasa la dirección del objeto. |
 | **Retorno de funciones** | Complejo. Se debe retornar un puntero (cuidado con el *scope* local). | Simple. Se retorna la referencia al objeto. |
 | **Soporte Unicode/UTF** | Limitado/Manual (requiere `wchar_t` o librerías externas). | Nativo y transparente para el desarrollador. |
